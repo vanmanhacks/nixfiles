@@ -4,6 +4,7 @@
   imports = [
       ./config/flatpak.nix
       ./config/fonts.nix
+      ./config/mullvad.nix
       ./config/nvf.nix
       ./config/offsec_packages.nix
       ./config/program-settings.nix
@@ -13,10 +14,10 @@
       ./config/yazi.nix
       ./config/zoxide.nix
       ./config/zsh.nix
-      ./system/audit-full.nix
       ./system/autoupdate.nix
       ./system/docker.nix
       ./system/fwupd.nix
+      ./system/hardening/audit.nix
       ./system/hardening/hardening.nix
       ./system/hardware-configuration.nix
       ./system/laptop.nix
@@ -24,6 +25,7 @@
       ./system/network.nix
       ./system/persist.nix
       ./system/pkgs.nix
+      ./system/privoxy.nix
       ./system/schedulers.nix
       ./system/system.nix
       ./system/users.nix
