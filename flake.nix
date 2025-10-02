@@ -28,9 +28,13 @@
     impermanence = {
       url="github:nix-community/impermanence";
     };
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, nvf, plasma-manager, oisd, p2pool, impermanence, ... }:
+  outputs = inputs@{ self, nixpkgs, home-manager, nvf, plasma-manager, oisd, p2pool, impermanence, lanzaboote, ... }:
     let 
       flakeSettings = {
         username = "vanmanhacks";
@@ -44,6 +48,7 @@
 	specialArgs = { inherit inputs flakeSettings; };
         modules = [
           ./profile/configuration.nix
+          lanzaboote.nixosModules.lanzaboote
           impermanence.nixosModules.impermanence
           nvf.nixosModules.default
           home-manager.nixosModules.home-manager

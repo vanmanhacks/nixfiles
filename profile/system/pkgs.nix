@@ -68,6 +68,7 @@ environment.systemPackages = with pkgs; [
     kdePackages.partitionmanager
     kdePackages.isoimagewriter
     nordic
+    sddm-kcm
 
     spotify
     reaper
