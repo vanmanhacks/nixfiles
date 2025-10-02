@@ -67,8 +67,8 @@ environment.systemPackages = with pkgs; [
     kdePackages.plasma-workspace-wallpapers
     kdePackages.partitionmanager
     kdePackages.isoimagewriter
+    kdePackages.sddm-kcm
     nordic
-    sddm-kcm
 
     spotify
     reaper
