@@ -5,12 +5,12 @@
                 enable = true;
                 kwin.virtualDesktops.number = 4;
                 workspace = {
-                        lookAndFeel = "Nordic-bluish";
+                  lookAndFeel = "Nordic-bluish";
                 };
                 panels = [
-                        {
-                                location = "top";
-                        }
+                  {
+                    location = "top";
+                  }
                 ];
                 hotkeys.commands = {
                         "launch-term" = {
@@ -23,20 +23,15 @@
                                 key = "Meta+Shift+Return";
                                 command = "brave";
                         };
-                        "launch-btop" = {
-                                name = "Launch btop";
-                                key = "Meta+Shift+B";
-                                command = "btop";
-                        };
                         "flameshot-screenshot" = {
                                 name = "Take Flamshot Screenshot";
                                 key = "Meta+Shift+F";
-                                command = ( "flameshot gui --path /home" + ("/" + flakeSettings.username) + "/Pictures/Screenshots");
+                                command = ( "flameshot gui --path /home" + ("/" + flakeSettings.username) + "/LibraryPictures/Screenshots" );
                         };
-                        "launch-caido" = {
-                                name = "Launch Caido";
+                        "launch-calibre" = {
+                                name = "Launch Calibre";
                                 key = "Meta+Shift+C";
-                                command = "caido";
+                                command = "calibre";
                         };
                         "launch-keepass" = {
                                 name = "Launch KeePassXC";
