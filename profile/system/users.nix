@@ -11,7 +11,7 @@
       kdePackages.kate
     #  thunderbird
     ];
-    #hashedPassword = "$6$iBJz.2SoOrq9gB0I$dtWb4qAZP9MsGPwWaxW50EX5N7iD6lu5bJd6AYMfjjP0YR10M/MBOH1DUKF9TMe0SEpemGttXF4q5fXqc1sx30";
+    hashedPassword = "$6$iBJz.2SoOrq9gB0I$dtWb4qAZP9MsGPwWaxW50EX5N7iD6lu5bJd6AYMfjjP0YR10M/MBOH1DUKF9TMe0SEpemGttXF4q5fXqc1sx30";
   };
 
   # Enable automatic login for the user.
