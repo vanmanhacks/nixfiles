@@ -23,6 +23,7 @@
       ./system/laptop.nix
       ./system/lanza.nix
       ./system/network.nix
+      ./system/password.nix
       ./system/persist.nix
       ./system/pkgs.nix
       ./system/privoxy.nix
