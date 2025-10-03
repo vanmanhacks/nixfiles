@@ -37,6 +37,7 @@
         ".icons"
 
         "Applications"
+        "Desktop"
         "InfoSec"
         "Library"
         "Projects"

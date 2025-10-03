@@ -86,6 +86,7 @@ environment.systemPackages = with pkgs; [
     sbctl
     fwupd
     e2fsprogs
+    usbguard
 
     monero-cli
     monero-gui
