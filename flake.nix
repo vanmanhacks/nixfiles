@@ -21,10 +21,10 @@
       url = "https://big.oisd.nl/domainswild";
       flake = false;
     };
-    p2pool = {
-      url = "github:jacoMalan1/nixos-p2pool-module";
-      inputs.nixpkgs.follows = "nixpkgs";          
-      };
+    #p2pool = {
+      #url = "github:jacoMalan1/nixos-p2pool-module";
+      #inputs.nixpkgs.follows = "nixpkgs";          
+    #};
     impermanence = {
       url="github:nix-community/impermanence";
     };
@@ -34,7 +34,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, nvf, plasma-manager, oisd, p2pool, impermanence, lanzaboote, ... }:
+  outputs = inputs@{ self, nixpkgs, home-manager, nvf, plasma-manager, oisd, impermanence, lanzaboote, ... }:
     let 
       flakeSettings = {
         username = "vanmanhacks";
@@ -42,7 +42,7 @@
         system = "x86_64-linux";
 	      email = "vanmanhacks@proton.me";
       };
-    
+
     in { 
       nixosConfigurations.${flakeSettings.hostname} = nixpkgs.lib.nixosSystem {
 	specialArgs = { inherit inputs flakeSettings; };

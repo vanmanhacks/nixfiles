@@ -1,9 +1,9 @@
-{ config, pkgs, inputs, flakeSettings, ... }:
+{ config, pkgs, inputs, flakeSettings, fenix, ... }:
 
 {
 
 environment.systemPackages = with pkgs; [
-    vim 
+    vim
     wget
     curl
     git
@@ -102,6 +102,8 @@ environment.systemPackages = with pkgs; [
     skim
     thumbs
     tmuxifier
+
+    #fenix.packages.${flakeSettings.system}.complete
   ];
 
 }

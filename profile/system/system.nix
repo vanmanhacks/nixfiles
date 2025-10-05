@@ -21,6 +21,7 @@
   nix.settings = { download-buffer-size = 524288000; };
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+  programs.nix-ld.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;

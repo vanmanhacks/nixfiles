@@ -81,24 +81,22 @@
 
         utility = {
           yanky-nvim = {
-	    enable = true;
-            setupOpts.ring.storage = "sqlite";
+	        enable = true;
+          setupOpts.ring.storage = "sqlite";
           };
           undotree.enable = true;
-#          icon-picker.enable = true;
         };
 
-	gestures = {
-          gesture-nvim.enable = true;
-	};
+    gestures = {
+      gesture-nvim.enable = true;
+	  };
 
-        autocomplete.nvim-cmp.enable = true;
-        dashboard.dashboard-nvim.enable = true;
-        filetree.neo-tree.enable = true;
-#        statusline.lualine.enable = true;
-        telescope.enable = true;
-        treesitter.enable = true;
-        utility.motion.leap.enable = true;
+    autocomplete.nvim-cmp.enable = true;
+    dashboard.dashboard-nvim.enable = true;
+    filetree.neo-tree.enable = true;
+    telescope.enable = true;
+    treesitter.enable = true;
+    utility.motion.leap.enable = true;
       };
     };
   };
