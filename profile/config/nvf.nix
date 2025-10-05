@@ -97,7 +97,7 @@
     telescope.enable = true;
     treesitter.enable = true;
     utility.motion.leap.enable = true;
-      };
+    };
     };
   };
 }
