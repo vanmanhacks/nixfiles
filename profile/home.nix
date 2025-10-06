@@ -7,6 +7,7 @@
         ./config/flameshot.nix
         ./config/git.nix
         ./config/gpg-agent.nix
+        ./config/helix.nix
        #./config/monero.nix
         ./config/neovide.nix
         ./config/nushell.nix
