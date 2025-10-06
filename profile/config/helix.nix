@@ -1,7 +1,7 @@
 { config, pkgs, flakeSettings, ... }: 
 {
 
-  users.${flakeSettings.username}.programs.helix = with pkgs; {
+  programs.helix = with pkgs; {
     enable = true;
     defaultEditor = true;
 
@@ -10,7 +10,7 @@
       biome
       clang-tools
       docker-compose-language-service
-      dockerfile-language-server-nodejs
+      dockerfile-language-server
       golangci-lint
       golangci-lint-langserver
       gopls
@@ -165,7 +165,7 @@
          #};
        #};
      #};
-    #};
+    };
 
     themes = {
       # https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox.toml
