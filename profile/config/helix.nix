@@ -306,6 +306,9 @@
         {
           name = "rust";
           language-servers = [ "rust-analyzer" "gpt" ];
+          formatter = {
+            command = "clippy";
+          };
           auto-format = true;
         }
         {
