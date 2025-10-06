@@ -1,8 +1,8 @@
-{ config, pkgs, inputs, flakeSettings, fenix, ... }:
+{ pkgs, ... }:
 
 {
 
-environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     vim
     wget
     curl
@@ -68,9 +68,15 @@ environment.systemPackages = with pkgs; [
     kdePackages.partitionmanager
     kdePackages.isoimagewriter
     kdePackages.sddm-kcm
-    sddm-chili-theme
-    sddm-sugar-dark
+    kdePackages.plasma-browser-integration
+    catppuccin-sddm
+    where-is-my-sddm-theme
     nordic
+
+    kdePackages.qtsvg
+    kdePackages.qtmultimedia
+    kdePackages.qtvirtualkeyboard
+    kdePackages.qtwayland
 
     spotify
     reaper
@@ -106,6 +112,7 @@ environment.systemPackages = with pkgs; [
     tmuxifier
 
     halloy
+    evil-helix
   ];
 
 }

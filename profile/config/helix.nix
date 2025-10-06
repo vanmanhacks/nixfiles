@@ -1,4 +1,4 @@
-{ config, pkgs, flakeSettings, ... }: 
+{ pkgs, ... }:
 {
 
   programs.helix = with pkgs; {
@@ -38,7 +38,7 @@
     ];
 
     settings = {
-      theme = "nord_transparent";
+      theme = "snazzy_transparent";
 
       editor = {
         color-modes = true;
@@ -87,7 +87,7 @@
       };
 
       #keys = {
-        #normal = {
+      #normal = {
       #H = "extend_char_left";
       #x = "extend_to_line_bounds";
       #J = [ "extend_line_down" "extend_to_line_bounds" ];
@@ -128,55 +128,55 @@
       #S-tab = "move_parent_node_start";
 
       #G = {
-        #j = "@vgj<esc>";
-        #k = "@vgk<esc>";
-        #};
+      #j = "@vgj<esc>";
+      #k = "@vgk<esc>";
+      #};
 
-        #g = {
-          #j = "goto_last_line";
-          #k = "goto_file_start";
-        #};
+      #g = {
+      #j = "goto_last_line";
+      #k = "goto_file_start";
+      #};
 
-        #space = {
-          #c = ":buffer-close";
-          #A-f = ":toggle auto-format";
-          #q = ":write-quit-all";
-          #Q = ":quit!";
-          #e = ":config-open";
-          #w = ":write";
-          #"." = ":toggle file-picker.git-ignore";
-          #};
-        #};
+      #space = {
+      #c = ":buffer-close";
+      #A-f = ":toggle auto-format";
+      #q = ":write-quit-all";
+      #Q = ":quit!";
+      #e = ":config-open";
+      #w = ":write";
+      #"." = ":toggle file-picker.git-ignore";
+      #};
+      #};
 
-       #insert = {
-         #C-u = [ "extend_to_line_bounds" "delete_selection_noyank" "open_above" ];
-         #C-w = [ "move_prev_word_start" "delete_selection_noyank" ];
-         #C-space = "completion";
-         #S-tab = "move_parent_node_start";
-         #};
+      #insert = {
+      #C-u = [ "extend_to_line_bounds" "delete_selection_noyank" "open_above" ];
+      #C-w = [ "move_prev_word_start" "delete_selection_noyank" ];
+      #C-space = "completion";
+      #S-tab = "move_parent_node_start";
+      #};
 
-       #select = {
-         #tab = "extend_parent_node_end";
-         #S-tab = "extend_parent_node_start";
+      #select = {
+      #tab = "extend_parent_node_end";
+      #S-tab = "extend_parent_node_start";
 
-         #g = {
-           #j = "goto_last_line";
-           #k = "goto_file_start";
-         #};
-       #};
-     #};
+      #g = {
+      #j = "goto_last_line";
+      #k = "goto_file_start";
+      #};
+      #};
+      #};
     };
 
     themes = {
       # https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox.toml
-      nord_transparent = {
-        inherits = "nord";
-       #"variable" = "blue1";
-       #"variable.parameter" = "blue1";
-       #"function.macro" = "red1";
-       #"operator" = "orange1";
-       #"comment" = "gray";
-       #"constant.builtin" = "orange1";
+      snazzy_transparent = {
+        inherits = "snazzy";
+        #"variable" = "blue1";
+        #"variable.parameter" = "blue1";
+        #"function.macro" = "red1";
+        #"operator" = "orange1";
+        #"comment" = "gray";
+        #"constant.builtin" = "orange1";
         "ui.background" = { };
       };
     };

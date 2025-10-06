@@ -1,15 +1,10 @@
-{ config, pkgs, lib, flakeSettings, ... }:
+{ ... }:
 
 {
   services.desktopManager.plasma6.enable = true;
 
   services.displayManager.sddm = {
     enable = true;
-    extraPackages = [ pkgs.sddm-sugar-dark ];
-    theme = "sugar-dark";
+    theme = "where_is_my_sddm_theme";
   };
-  
-  environment.systemPackages = [
-    pkgs.sddm-sugar-dark
-  ];
 }
