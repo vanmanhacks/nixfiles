@@ -68,6 +68,8 @@ environment.systemPackages = with pkgs; [
     kdePackages.partitionmanager
     kdePackages.isoimagewriter
     kdePackages.sddm-kcm
+    sddm-chili-theme
+    sddm-sugar-dark
     nordic
 
     spotify
@@ -103,7 +105,7 @@ environment.systemPackages = with pkgs; [
     thumbs
     tmuxifier
 
-    #fenix.packages.${flakeSettings.system}.complete
+    halloy
   ];
 
 }
