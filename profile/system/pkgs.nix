@@ -56,7 +56,7 @@
     flatpak
 
     ansible
-    #vagrant
+    vagrant
 
     python314
     go
@@ -113,6 +113,10 @@
 
     halloy
     evil-helix
+    rustypaste
+    rustypaste-cli
+    rustycli
+    rusty-diceware
   ];
 
 }
