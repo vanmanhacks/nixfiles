@@ -6,11 +6,11 @@
   services.logrotate.settings = {
 
     # --- Audit Log Rotation ---
-    "/var/log/audit/audit.log" = {
+    "/var/log/**/*.log" = {
       size = "50M";
 
       # Retention: Keep 12 rotated log files (e.g., audit.log.1, audit.log.2, ...).
-      rotate = 5;
+      rotate = 4;
 
       # Compress old log files to save space.
       compress = true;
@@ -29,46 +29,42 @@
       # After rotation, create a new empty log file with secure permissions
       # (read/write for root only).
       create = "0600 root root";
-
-      postrotate = ''
-        ${pkgs.procps}/bin/kill -HUP $(cat /run/auditd.pid)
-      '';
     };
 
     # --- General System Log Rotation ---
-    "/var/log/*.log" = {
-      size = "50M";
-      rotate = 4;
-      compress = true;
-      missingok = true;
-      notifempty = true;
-      su = "root root";
-    };
+    #"/var/log/*.log" = {
+    #size = "50M";
+    #rotate = 4;
+    #compress = true;
+    #missingok = true;
+    #notifempty = true;
+    #su = "root root";
+    #};
 
-    "/var/log/**/*.log" = {
-      size = "50M";
-      rotate = 4;
-      compress = true;
-      missingok = true;
-      notifempty = true;
-      su = "root root";
-    };
+    #"/var/log/**/*.log" = {
+    #size = "50M";
+    #rotate = 4;
+    #compress = true;
+    #missingok = true;
+    #notifempty = true;
+    #su = "root root";
+    #};
 
-    "/var/log/mullvad-vpn/*.log" = {
-      monthly = true;
-      rotate = 1;
-      compress = true;
-      missingok = true;
-      create = "0600 root root";
-    };
+    # "/var/log/mullvad-vpn/*.log" = {
+    #   monthly = true;
+    #   rotate = 1;
+    #   compress = true;
+    #   missingok = true;
+    #   create = "0600 root root";
+    # };
 
-    "/var/log/libvirt/*.log" = {
-      monthly = true;
-      rotate = 1;
-      compress = true;
-      missingok = true;
-      create = "0600 root root";
-    };
+    # "/var/log/libvirt/*.log" = {
+    #   monthly = true;
+    #   rotate = 1;
+    #   compress = true;
+    #   missingok = true;
+    #   create = "0600 root root";
+    # };
 
     # --- Login Record Rotation ---
     "/var/log/btmp" = {
