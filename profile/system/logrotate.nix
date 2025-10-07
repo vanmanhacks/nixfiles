@@ -87,4 +87,9 @@
       create = "0664 root utmp";
     };
   };
+
+  services.journald.storage = "persistent";
+  services.journald.extraConfig = ''
+    SystemMaxUse=250M
+  '';
 }
