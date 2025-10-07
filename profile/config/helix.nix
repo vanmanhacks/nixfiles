@@ -10,7 +10,7 @@
       biome
       clang-tools
       docker-compose-language-service
-      dockerfile-language-server
+      dockerfile-language-server-nodejs
       golangci-lint
       golangci-lint-langserver
       gopls

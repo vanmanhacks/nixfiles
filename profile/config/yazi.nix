@@ -3,7 +3,7 @@
 {
   programs.yazi = {
     enable = true;
-    
+
   };
   environment.systemPackages = with pkgs;
     [
@@ -18,7 +18,7 @@
       yaziPlugins.full-border
       yaziPlugins.smart-enter
       yaziPlugins.smart-paste
-      yaziPlugins.wl-clipboard
+      #yaziPlugins.wl-clipboard
       yaziPlugins.rich-preview
       yaziPlugins.smart-filter
       yaziPlugins.restore

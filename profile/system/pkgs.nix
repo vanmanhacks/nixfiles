@@ -89,6 +89,7 @@
     clamav
     aide
     kernel-hardening-checker
+    logrotate
 
     sbctl
     fwupd

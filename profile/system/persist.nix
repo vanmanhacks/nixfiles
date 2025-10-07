@@ -4,6 +4,7 @@
   environment.persistence."/persist" = {
     directories = [
       "/etc/mullvad-vpn"
+      "/etc/audit"
       "/etc/NetworkManager"
       "/etc/nixos"
       "/etc/ssh"

@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
-    caido
+    caido-unstable
 
     mubeng
 
@@ -35,7 +35,7 @@
     cewler
     ffuf
     kiterunner
-    
+
     hakrawler
     gospider
 

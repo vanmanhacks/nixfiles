@@ -45,7 +45,7 @@
     utils = [
       rust-script # Run Rust files as scripts
       bacon # Background Rust code checker
-      clippy
+      #clippy
       sccache # Shared compilation cache
       tokei # Count lines of code
     ];
@@ -77,7 +77,7 @@
   # Add cargo bin directory to PATH
   home.sessionPath = [
     "${config.home.homeDirectory}/.cargo/bin"
-    "${config.home.homeDirectory}/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin"
+    "${config.home.homeDirectory}/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin"
   ];
 
   # Create minimal cargo configuration for development environment

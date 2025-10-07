@@ -29,7 +29,7 @@
 # 		https://github.com/linux-audit/audit-userspace/blob/master/rules/30-nispom.rules
 
 # Remove any existing rules
-#-D
+-D
 
 # Buffer Size
 ## Feel free to increase this if the machine panic's

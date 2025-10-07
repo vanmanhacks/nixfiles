@@ -1,4 +1,4 @@
-{ config, inputs, lib, ... }:
+{ ... }:
 
 {
                 #security.lockKernelModules = true;

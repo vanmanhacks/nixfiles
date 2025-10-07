@@ -12,7 +12,7 @@
       pkgs.tmuxPlugins.continuum
       pkgs.tmuxPlugins.tmux-sessionx
       pkgs.tmuxPlugins.better-mouse-mode
-      pkgs.tmuxPlugins.dotbar
+      #pkgs.tmuxPlugins.dotbar
     ];
     sensibleOnTop = true;
     baseIndex = 1;

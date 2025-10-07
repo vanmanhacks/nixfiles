@@ -1,11 +1,10 @@
 # dnscrypt-proxy.nix
-{
-  pkgs,
-  lib,
-  inputs,
-  oisd,
-  ...
-}: 
+{ pkgs
+, lib
+, inputs
+, oisd
+, ...
+}:
 
 let
   blocklist_base = builtins.readFile inputs.oisd;
@@ -16,10 +15,11 @@ let
   '';
   hasIPv6Internet = true;
   StateDirectory = "dnscrypt-proxy";
-in {
+in
+{
   networking = {
     # Set DNS nameservers to the local host addresses for iPv4 (`127.0.0.1`) & iPv6 (::1)
-    nameservers = ["127.0.0.1" "::1"];
+    nameservers = [ "127.0.0.1" "::1" ];
     # If using dhcpcd
     # dhcpcd.extraConfig = "nohook resolv.conf";
     # If using NetworkManager
@@ -27,7 +27,7 @@ in {
   };
   services.resolved.enable = lib.mkForce false;
   # See https://wiki.nixos.org/wiki/Encrypted_DNS
-  services.dnscrypt-proxy = {
+  services.dnscrypt-proxy2 = {
     enable = true;
     # See https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml
     settings = {
