@@ -45,14 +45,14 @@
       su = "root root";
     };
 
-    #"/var/log/**/*.log" = {
-    #size = "50M";
-    #rotate = 4;
-    #compress = true;
-    #missingok = true;
-    #notifempty = true;
-    #su = "root";
-    #};
+    "/var/log/**/*.log" = {
+      size = "50M";
+      rotate = 4;
+      compress = true;
+      missingok = true;
+      notifempty = true;
+      su = "root root";
+    };
 
     "/var/log/mullvad-vpn/*.log" = {
       monthly = true;
