@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
 
@@ -29,17 +29,30 @@
       # After rotation, create a new empty log file with secure permissions
       # (read/write for root only).
       create = "0600 root root";
+
+      postrotate = ''
+        ${pkgs.procps}/bin/kill -HUP $(cat /run/auditd.pid)
+      '';
     };
 
     # --- General System Log Rotation ---
-    "/var/log/*log" = {
+    "/var/log/*.log" = {
       size = "50M";
       rotate = 4;
       compress = true;
       missingok = true;
       notifempty = true;
-      su = "root syslog";
+      su = "root root";
     };
+
+    #"/var/log/**/*.log" = {
+    #size = "50M";
+    #rotate = 4;
+    #compress = true;
+    #missingok = true;
+    #notifempty = true;
+    #su = "root";
+    #};
 
     "/var/log/mullvad-vpn/*.log" = {
       monthly = true;
