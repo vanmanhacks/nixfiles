@@ -58,7 +58,6 @@
     ansible
     #vagrant
 
-    rustup
     python314
     go
     typescript
