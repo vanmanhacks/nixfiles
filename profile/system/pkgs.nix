@@ -55,6 +55,11 @@
     syncthing
     flatpak
 
+    openvpn
+    openvpn3
+    wireguard-tools
+    wireguard-ui
+
     ansible
     vagrant
 
