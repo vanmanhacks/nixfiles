@@ -54,6 +54,7 @@
     localsend
     syncthing
     flatpak
+    magic-wormhole-rs
 
     openvpn
     openvpn3
