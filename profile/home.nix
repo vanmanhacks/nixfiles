@@ -17,6 +17,7 @@
     ./config/rust.nix
     ./config/tmux.nix
     ./config/yt-dlp.nix
+    ./config/zed.nix
   ];
 
   custom.pgp.enable = true;
