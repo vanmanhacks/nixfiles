@@ -2,7 +2,7 @@
 
 {
   programs.zed-editor = {
-    package = "zed-editor-fhs";
+    package = pkgs.zed-editor-fhs;
     enable = true;
     extensions = [
       "nix"

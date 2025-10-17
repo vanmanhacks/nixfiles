@@ -4,6 +4,10 @@
   environment.systemPackages = with pkgs; [
     caido-unstable
 
+    whois
+    dig
+    dnslookup
+
     mubeng
 
     asnmap

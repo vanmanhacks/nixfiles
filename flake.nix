@@ -17,10 +17,10 @@
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    oisd = {
-      url = "https://big.oisd.nl/domainswild";
-      flake = false;
-    };
+    # oisd = {
+    #   url = "https://big.oisd.nl/domainswild";
+    #   flake = false;
+    # };
     #p2pool = {
     #url = "github:jacoMalan1/nixos-p2pool-module";
     #inputs.nixpkgs.follows = "nixpkgs";          
@@ -34,7 +34,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, nvf, plasma-manager, oisd, impermanence, lanzaboote, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, nvf, plasma-manager, impermanence, lanzaboote, ... }:
     let
       flakeSettings = {
         username = "vanmanhacks";
