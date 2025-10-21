@@ -4,6 +4,13 @@
   environment.systemPackages = with pkgs; [
     caido-unstable
 
+    wordlists
+    payloadsallthethings-unstable
+
+    wafw00f
+    tlsx
+    sslscan
+
     whois
     dig
     dnslookup
@@ -20,6 +27,10 @@
 
     dnsx
     alterx
+
+    netcat
+    chisel
+    netexec
 
     nmap
     smap

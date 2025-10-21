@@ -9,6 +9,9 @@
     git
     moreutils
 
+    firewalld
+    firewalld-gui
+
     alacritty
 
     zsh

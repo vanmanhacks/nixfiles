@@ -17,10 +17,6 @@
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # oisd = {
-    #   url = "https://big.oisd.nl/domainswild";
-    #   flake = false;
-    # };
     #p2pool = {
     #url = "github:jacoMalan1/nixos-p2pool-module";
     #inputs.nixpkgs.follows = "nixpkgs";          
@@ -44,9 +40,9 @@
       };
       unstablePkgs = import nixpkgs-unstable {
         system = flakeSettings.system;
-        #config.allowUnfree = true;
         config.allowUnfreePredicate = pkg: builtins.elem (nixpkgs.lib.getName pkg) [
           "caido"
+          "payloadsallthethings"
         ];
       };
 
@@ -55,15 +51,14 @@
       nixosConfigurations.${flakeSettings.hostname} = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs flakeSettings;
-          #unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
           unstable = unstablePkgs;
         };
         modules = [
-          # create unstable overlay and designate packages
           ({ unstable, ... }: {
             nixpkgs.overlays = [
               (final: prev: {
                 caido-unstable = unstable.caido;
+                payloadsallthethings-unstable = unstable.payloadsallthethings;
               })
             ];
           })
