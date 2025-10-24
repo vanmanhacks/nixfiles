@@ -47,6 +47,7 @@
     xnlinkfinder
     waymore
     gowitness
+    cewl
     cewler
     ffuf
     kiterunner
