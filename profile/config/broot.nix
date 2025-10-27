@@ -3,7 +3,7 @@
 {
   programs.broot = {
     enable = true;
-    modal = true;
+    settings.modal = true;
     enableZshIntegration = true;
     enableNushellIntegration = true;
   };
