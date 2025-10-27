@@ -17,7 +17,6 @@
     procs
 
     doggo
-    xh
     lazygit
 
     jq
