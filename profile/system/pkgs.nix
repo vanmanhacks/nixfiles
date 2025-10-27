@@ -9,8 +9,21 @@
     git
     moreutils
 
+    broot
+    fd
+    bottom
+    hyperfine
+    gping
+    procs
+
+    doggo
+    xh
+    lazygit
+
+    jq
+    jq-zsh-plugin
+
     firewalld
-    firewalld-gui
 
     alacritty
 

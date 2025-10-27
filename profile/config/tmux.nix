@@ -16,5 +16,6 @@
     ];
     sensibleOnTop = true;
     baseIndex = 1;
+    mouse = true;
   };
 }

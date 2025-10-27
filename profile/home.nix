@@ -4,6 +4,7 @@
   imports = [
     ./config/alacritty.nix
     ./config/bacon.nix
+    ./config/broot.nix
     ./config/btop.nix
     ./config/flameshot.nix
     ./config/git.nix
