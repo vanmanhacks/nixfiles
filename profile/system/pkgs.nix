@@ -139,6 +139,9 @@
     rustypaste-cli
     rustycli
     rusty-diceware
+
+    firefly-iii
+    firefly-iii-data-importer
   ];
 
 }
