@@ -43,6 +43,7 @@
         config.allowUnfreePredicate = pkg: builtins.elem (nixpkgs.lib.getName pkg) [
           "caido"
           "payloadsallthethings"
+          "mat2"
         ];
       };
 
@@ -59,6 +60,7 @@
               (final: prev: {
                 caido-unstable = unstable.caido;
                 payloadsallthethings-unstable = unstable.payloadsallthethings;
+                mat2-unstable = unstable.mat2;
               })
             ];
           })

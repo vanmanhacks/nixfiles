@@ -9,6 +9,8 @@
     git
     moreutils
 
+    openssl
+
     broot
     fd
     bottom
@@ -127,7 +129,7 @@
     goofcord
     neovide
 
-    mat2
+    mat2-unstable
 
     skim
     thumbs
@@ -139,9 +141,6 @@
     rustypaste-cli
     rustycli
     rusty-diceware
-
-    firefly-iii
-    firefly-iii-data-importer
   ];
 
 }

@@ -14,9 +14,10 @@
   virtualisation.docker = {
     enable = true;
     enableOnBoot = true;
-#    storageDriver = storageDriver;
+    storageDriver = "btrfs";
     autoPrune.enable = true;
     daemon.settings = {
+      experimental = true;
       dns = [ "9.9.9.9" ];
     };
   };

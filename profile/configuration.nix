@@ -3,7 +3,6 @@
 {
   imports = [
     ./config/flatpak.nix
-    ./config/firefly-iii.nix
     ./config/fonts.nix
     ./config/mullvad.nix
     ./config/nvf.nix

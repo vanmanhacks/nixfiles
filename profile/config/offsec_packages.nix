@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    firefox-bin
+
     caido-unstable
 
     wordlists
