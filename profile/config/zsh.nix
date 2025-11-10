@@ -7,8 +7,8 @@
   programs.zsh = {
     enable = true;
     shellInit = ''
-                        zsh-newuser-install() {:;}
-                '';
+      zsh-newuser-install() {:;}
+    '';
 
     enableCompletion = true;
     autosuggestions.enable = true;
@@ -24,5 +24,13 @@
       poweroff = "sudo poweroff";
       cd = "z";
     };
+
+    histSize = 10000;
+    histFile = "$HOME/.zsh_history";
+    setOptions = [
+      "HIST_IGNORE_ALL_DUPS"
+    ];
+
+    # setOptions = [ "unsetopt HIST_SAVE_BY_COPY" ];
   };
 }

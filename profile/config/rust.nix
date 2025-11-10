@@ -99,7 +99,7 @@
   '';
 
   # Shell aliases for Rust toolchain management
-  home.shellAliases = {
+  programs.zsh.shellAliases = {
     # Global Rust toolchain commands
     "rust-update" = "rustup update && cargo install-update -a";
     "rust-clean" = "cargo clean && rm -rf ~/.cargo/registry/cache";
