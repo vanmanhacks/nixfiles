@@ -8,6 +8,7 @@
     curl
     git
     moreutils
+    toybox
 
     openssl
 
@@ -130,6 +131,7 @@
     neovide
 
     mat2-unstable
+    exiftool
 
     skim
     thumbs

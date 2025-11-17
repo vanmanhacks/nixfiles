@@ -4,6 +4,9 @@
   environment.systemPackages = with pkgs; [
     firefox-bin
 
+    testdisk
+    testdisk-qt
+
     caido-unstable
 
     wordlists
