@@ -143,6 +143,14 @@
     rustypaste-cli
     rustycli
     rusty-diceware
+
+    feather
+    monero-cli
+    monero-gui
+
+    tradingview
+
+    code2prompt
   ];
 
 }
