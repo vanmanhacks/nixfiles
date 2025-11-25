@@ -3,6 +3,10 @@
 {
 
   networking.hostName = flakeSettings.hostname; # Define your hostname.
+  networking.hosts = {
+    "192.168.1.100" = [ "macnix" ];
+    "192.168.1.231" = [ "hpnix" ];
+  };
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -11,19 +15,19 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-#  networking.firewall = {
-#    enable = true;
-#    extraCommands =
-#    ''
-#       iptables -A DOCKER-USER -m physdev
-#       iptables -A DOCKER-USER -i br-+ -o br-+ -j DROP
-#    '';
-#  };
+  #  networking.firewall = {
+  #    enable = true;
+  #    extraCommands =
+  #    ''
+  #       iptables -A DOCKER-USER -m physdev
+  #       iptables -A DOCKER-USER -i br-+ -o br-+ -j DROP
+  #    '';
+  #  };
 
-# Open ports in the firewall.
-# networking.firewall.allowedTCPPorts = [ ... ];
-# networking.firewall.allowedUDPPorts = [ ... ];
-# Or disable the firewall altogether.
-# networking.firewall.enable = false;
+  # Open ports in the firewall.
+  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
 
 }

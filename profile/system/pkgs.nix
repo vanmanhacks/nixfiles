@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+    gnumake
     vim
     wget
     curl
@@ -151,6 +152,7 @@
     tradingview
 
     code2prompt
+    repomix
   ];
 
 }
