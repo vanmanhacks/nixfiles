@@ -60,6 +60,7 @@
     calibre
     obsidian
     pandoc
+    miktex
 
     keepassxc
     veracrypt
