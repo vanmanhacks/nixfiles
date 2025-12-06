@@ -4,6 +4,7 @@
   imports = [
     ./config/flatpak.nix
     ./config/fonts.nix
+    # ./config/git.nix
     ./config/mullvad.nix
     ./config/nvf.nix
     ./config/offsec_packages.nix
@@ -15,7 +16,6 @@
     ./config/yazi.nix
     ./config/zoxide.nix
     ./config/zsh.nix
-    ./system/autoupdate.nix
     ./system/docker.nix
     ./system/fwupd.nix
     ./system/hardening/audit.nix

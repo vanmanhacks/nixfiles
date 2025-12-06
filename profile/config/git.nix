@@ -2,6 +2,6 @@
 # COMMENT
 {
   programs.git.enable = true;
-  # programs.git.user.name = flakeSettings.username;
-  # programs.git.user.email = flakeSettings.email;
+  programs.git.settings.user.name = flakeSettings.username;
+  programs.git.settings.user.email = flakeSettings.email;
 }
