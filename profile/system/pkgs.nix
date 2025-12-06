@@ -39,7 +39,7 @@
     btop
     zoxide
     fzf
-    du-dust
+    dust
     ouch
     fd
     nushell
