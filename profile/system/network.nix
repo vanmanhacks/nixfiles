@@ -3,10 +3,6 @@
 {
 
   networking.hostName = flakeSettings.hostname; # Define your hostname.
-  networking.hosts = {
-    "192.168.1.100" = [ "macnix" ];
-    "192.168.1.231" = [ "hpnix" ];
-  };
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

@@ -21,6 +21,7 @@
     ./system/hardening/audit.nix
     ./system/hardening/hardening.nix
     ./system/hardware-configuration.nix
+    ./system/hosts.nix
     ./system/laptop.nix
     ./system/lanza.nix
     ./system/logrotate.nix
