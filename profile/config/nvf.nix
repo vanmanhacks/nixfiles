@@ -39,18 +39,18 @@
           markdown.enable = true;
           rust = {
             enable = true;
-            crates.enable = true;
+            extensions.crates-nvim.enable = true;
           };
           ts = {
             enable = true;
-            format.type = "biome";
+            format.type = [ "biome" ];
           };
           html = {
             enable = true;
           };
           css = {
             enable = true;
-            format.type = "biome";
+            format.type = [ "biome" ];
           };
           assembly.enable = true;
           clang.enable = true;
@@ -81,23 +81,23 @@
 
         utility = {
           yanky-nvim = {
-	        enable = true;
-          setupOpts.ring.storage = "sqlite";
+            enable = true;
+            setupOpts.ring.storage = "sqlite";
           };
           undotree.enable = true;
         };
 
-    gestures = {
-      gesture-nvim.enable = true;
-	  };
+        gestures = {
+          gesture-nvim.enable = true;
+        };
 
-    autocomplete.nvim-cmp.enable = true;
-    dashboard.dashboard-nvim.enable = true;
-    filetree.neo-tree.enable = true;
-    telescope.enable = true;
-    treesitter.enable = true;
-    utility.motion.leap.enable = true;
-    };
+        autocomplete.nvim-cmp.enable = true;
+        dashboard.dashboard-nvim.enable = true;
+        filetree.neo-tree.enable = true;
+        telescope.enable = true;
+        treesitter.enable = true;
+        utility.motion.leap.enable = true;
+      };
     };
   };
 }

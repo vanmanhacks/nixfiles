@@ -86,6 +86,8 @@
     vagrant
 
     python314
+    uv
+
     go
     typescript
 

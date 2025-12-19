@@ -45,6 +45,9 @@
     xh
     httpx
 
+    jwt-hack
+    jwt-cli
+
     feroxbuster
     katana
     gau
@@ -55,6 +58,7 @@
     cewl
     cewler
     ffuf
+    wfuzz
     kiterunner
 
     hakrawler
