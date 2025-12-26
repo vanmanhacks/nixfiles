@@ -156,6 +156,10 @@
 
     code2prompt
     repomix
+
+    android-tools
+    android-studio-full
+    android-studio-tools
   ];
 
 }

@@ -16,6 +16,7 @@
     ./config/yazi.nix
     ./config/zoxide.nix
     ./config/zsh.nix
+    ./system/android.nix
     ./system/docker.nix
     ./system/fwupd.nix
     ./system/hardening/audit.nix
