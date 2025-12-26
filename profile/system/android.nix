@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  config.android_sdk.accept_license = true;
+  # config.android_sdk.accept_license = true;
 }
