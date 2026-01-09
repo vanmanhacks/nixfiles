@@ -7,6 +7,7 @@
     ./config/broot.nix
     ./config/btop.nix
     ./config/flameshot.nix
+    ./config/gaming.nix
     ./config/git.nix
     ./config/gpg-agent.nix
     ./config/helix.nix
