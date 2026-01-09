@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, flakeSettings, ... }:
 
 {
 
@@ -7,17 +7,15 @@
 
   environment.systemPackages = with pkgs; [
     mangohud
+    protonup-rs
   ];
 
   programs.gamemode.enable = true;
 
-  home.packages = with pkgs; [
-    protonup
-  ];
-
-  home.sessionVariables = {
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
-      ”\\\${HOME}/.steam/root/compatibilitytools.d”;
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = ("/home/" + (flakeSettings.username) + "/.steam/root/compatibilitytools.d");
   };
 
 }
+
+

@@ -4,6 +4,7 @@
   imports = [
     ./config/flatpak.nix
     ./config/fonts.nix
+    ./config/gaming.nix
     # ./config/git.nix
     ./config/mullvad.nix
     ./config/nvf.nix
