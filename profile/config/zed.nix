@@ -3,7 +3,7 @@
 {
   programs.zed-editor = {
     package = pkgs.zed-editor-fhs;
-    enable = true;
+    enable = false;
     extensions = [
       "nix"
       "HTML"
