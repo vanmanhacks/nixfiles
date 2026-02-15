@@ -158,6 +158,8 @@
     repomix
 
     android-tools
+
+    gramps
   ];
 
 }
