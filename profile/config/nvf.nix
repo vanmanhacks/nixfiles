@@ -41,7 +41,7 @@
             enable = true;
             extensions.crates-nvim.enable = true;
           };
-          ts = {
+          typescript = {
             enable = true;
             format.type = [ "biome" ];
           };

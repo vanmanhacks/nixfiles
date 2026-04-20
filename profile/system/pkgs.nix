@@ -160,6 +160,8 @@
     android-tools
 
     gramps
+
+    dreamchess
   ];
 
 }

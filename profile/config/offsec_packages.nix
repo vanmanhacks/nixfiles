@@ -7,7 +7,10 @@
     testdisk
     testdisk-qt
 
-    caido-unstable
+    caido-cli-unstable
+    caido-desktop-unstable
+
+    metasploit
 
     wordlists
     payloadsallthethings-unstable

@@ -41,7 +41,8 @@
       unstablePkgs = import nixpkgs-unstable {
         system = flakeSettings.system;
         config.allowUnfreePredicate = pkg: builtins.elem (nixpkgs.lib.getName pkg) [
-          "caido"
+          "caido-cli"
+          "caido-desktop"
           "payloadsallthethings"
           "mat2"
         ];
@@ -58,7 +59,8 @@
           ({ unstable, ... }: {
             nixpkgs.overlays = [
               (final: prev: {
-                caido-unstable = unstable.caido;
+                caido-cli-unstable = unstable.caido-cli;
+                caido-desktop-unstable = unstable.caido-desktop;
                 payloadsallthethings-unstable = unstable.payloadsallthethings;
                 mat2-unstable = unstable.mat2;
               })
