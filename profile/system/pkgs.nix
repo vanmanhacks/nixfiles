@@ -152,7 +152,7 @@
     monero-cli
     monero-gui
 
-    tradingview
+    # tradingview
 
     code2prompt
     repomix

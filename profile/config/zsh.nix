@@ -23,6 +23,7 @@
       cf = "clear; fastfetch";
       poweroff = "sudo poweroff";
       cd = "z";
+      oswa-launch = "cd OSWA; ./launch.sh; tmux new -s OSWA";
     };
 
     histSize = 10000;

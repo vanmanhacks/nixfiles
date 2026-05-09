@@ -10,10 +10,8 @@
     ./config/git.nix
     ./config/gpg-agent.nix
     ./config/helix.nix
-    #./config/monero.nix
     ./config/neovide.nix
     ./config/nushell.nix
-    #./config/p2pool.nix
     ./config/plasma.nix
     ./config/rust.nix
     ./config/tmux.nix
