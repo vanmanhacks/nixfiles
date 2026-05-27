@@ -27,5 +27,6 @@
     docker
     docker-compose
     lazydocker
+    docker-buildx
   ];
 }

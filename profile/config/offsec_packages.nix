@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    burpsuite
+
     firefox-bin
 
     testdisk
@@ -36,7 +38,7 @@
     dnsx
     alterx
 
-    netcat
+    netcat-gnu
     chisel
     netexec
 
