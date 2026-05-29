@@ -1,7 +1,9 @@
-{ lib, pkgs, ... }:
+{ lib, llm-agents, inputs, pkgs, ... }:
 
 {
+
   environment.systemPackages = with pkgs; [
+
     burpsuite
 
     firefox-bin
@@ -78,4 +80,5 @@
     apkleaks
     trufflehog
   ];
+
 }

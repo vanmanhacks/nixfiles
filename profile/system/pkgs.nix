@@ -90,6 +90,7 @@
 
     go
     typescript
+    nodejs
 
     kdePackages.filelight
     kdePackages.plasma-workspace-wallpapers
