@@ -28,9 +28,10 @@
       url = "github:nix-community/lanzaboote";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-hermes.url = "github:0xrsydn/nix-hermes-agent";
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, nvf, plasma-manager, impermanence, lanzaboote, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, nvf, plasma-manager, impermanence, lanzaboote, nix-hermes, ... }:
     let
       flakeSettings = {
         username = "vanmanhacks";
@@ -67,6 +68,7 @@
             ];
           })
           ./profile/configuration.nix
+          nix-hermes.nixosModules.hermes-agent
           lanzaboote.nixosModules.lanzaboote
           impermanence.nixosModules.impermanence
           nvf.nixosModules.default

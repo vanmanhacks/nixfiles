@@ -6,6 +6,7 @@
     ./config/fonts.nix
     ./config/gaming.nix
     # ./config/git.nix
+    ./config/hermes.nix
     ./config/mullvad.nix
     ./config/nvf.nix
     ./config/offsec_packages.nix
@@ -13,6 +14,7 @@
     ./config/sddm.nix
     ./config/starship.nix
     ./config/stevenblack-hosts.nix
+    ./config/tailscale.nix
     ./config/virt-manager.nix
     ./config/yazi.nix
     ./config/zoxide.nix

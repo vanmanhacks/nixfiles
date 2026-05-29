@@ -11,6 +11,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.nameservers = [ "192.168.40.100" "1.1.1.1" ];
+
   #  networking.firewall = {
   #    enable = true;
   #    extraCommands =
