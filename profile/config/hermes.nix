@@ -23,7 +23,7 @@
       };
       toolsets = [ "all" ];
       terminal = {
-        backend = "docker";
+        backend = "local";
       };
     };
 

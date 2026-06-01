@@ -24,6 +24,8 @@
       poweroff = "sudo poweroff";
       cd = "z";
       oswa-launch = "cd OSWA; ./launch.sh; tmux new -s OSWA";
+      hermes = "hermes --tui";
+      hermes-resume = "hermes --tui -c";
     };
 
     histSize = 10000;

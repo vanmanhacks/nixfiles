@@ -6,7 +6,7 @@
     ./config/fonts.nix
     ./config/gaming.nix
     # ./config/git.nix
-    ./config/hermes.nix
+    # ./config/hermes.nix
     ./config/mullvad.nix
     ./config/nvf.nix
     ./config/offsec_packages.nix
