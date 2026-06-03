@@ -27,6 +27,8 @@
         ".local"
         ".cache"
 
+        # ".hermes"
+
         ".gnupg"
         ".ssh"
         ".pki"

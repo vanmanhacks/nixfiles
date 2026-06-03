@@ -28,10 +28,10 @@
       url = "github:nix-community/lanzaboote";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # llm-agents = {
-    # url = "github:numtide/llm-agents.nix";
-    # follows = "nixpkgs-unstable";
-    # };
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+      # follows = "nixpkgs-unstable";
+    };
     hermes-agent.url = "github:NousResearch/hermes-agent";
   };
 

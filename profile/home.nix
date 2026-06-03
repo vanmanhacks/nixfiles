@@ -6,6 +6,7 @@
     ./config/bacon.nix
     ./config/broot.nix
     ./config/btop.nix
+    ./config/claude-code.nix
     ./config/flameshot.nix
     ./config/git.nix
     ./config/gpg-agent.nix

@@ -4,6 +4,8 @@
 
   users.defaultUserShell = pkgs.zsh;
 
+  environment.localBinInPath = true;
+
   programs.zsh = {
     enable = true;
     shellInit = ''
@@ -24,8 +26,8 @@
       poweroff = "sudo poweroff";
       cd = "z";
       oswa-launch = "cd OSWA; ./launch.sh; tmux new -s OSWA";
-      hermes = "hermes --tui";
-      hermes-resume = "hermes --tui -c";
+      # hermes = "hermes --tui";
+      # hermes-resume = "hermes --tui -c";
     };
 
     histSize = 10000;

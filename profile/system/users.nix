@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, flakeSettings, ...}:
+{ config, pkgs, inputs, flakeSettings, ... }:
 
 {
   users.mutableUsers = false;
@@ -11,6 +11,13 @@
     extraGroups = [ "docker" "networkmanager" "wheel" "libvirtd" ];
     hashedPasswordFile = "/persist/passwords/${flakeSettings.username}";
   };
+
+  # users.users.hermes = {
+  #   isNormalUser = false;
+  #   isSystemUser = true;
+  #   users.users.hermes.group = "hermes";
+  #   users.groups.hermes = { };
+  # };
 
   # Enable automatic login for the user.
   #services.displayManager.autoLogin.enable = true;

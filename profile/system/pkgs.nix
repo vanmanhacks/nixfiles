@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
 
@@ -163,6 +163,10 @@
     gramps
 
     dreamchess
+
+    # claude-code
+
+    inputs.llm-agents.packages.${pkgs.system}.hermes-agent
   ];
 
 }
