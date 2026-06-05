@@ -27,7 +27,8 @@
         ".local"
         ".cache"
 
-        # ".hermes"
+        ".claude"
+        ".hermes"
 
         ".gnupg"
         ".ssh"

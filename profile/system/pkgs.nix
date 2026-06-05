@@ -167,6 +167,7 @@
     # claude-code
 
     inputs.llm-agents.packages.${pkgs.system}.hermes-agent
+    inputs.llm-agents.packages.${pkgs.system}.agent-browser
   ];
 
 }
