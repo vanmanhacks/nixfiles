@@ -17,7 +17,6 @@
     ./config/tailscale.nix
     ./config/virt-manager.nix
     ./config/yazi.nix
-    ./config/zellij.nix
     ./config/zoxide.nix
     ./config/zsh.nix
     ./system/android.nix

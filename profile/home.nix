@@ -18,6 +18,7 @@
     ./config/tmux.nix
     ./config/yt-dlp.nix
     ./config/zed.nix
+    ./config/zellij.nix
   ];
 
   custom.pgp.enable = true;
