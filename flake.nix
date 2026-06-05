@@ -32,7 +32,7 @@
       url = "github:numtide/llm-agents.nix";
       # follows = "nixpkgs-unstable";
     };
-    hermes-agent.url = "github:NousResearch/hermes-agent";
+    # hermes-agent.url = "github:NousResearch/hermes-agent";
   };
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, nvf, plasma-manager, impermanence, lanzaboote, hermes-agent, ... }:

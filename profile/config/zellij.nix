@@ -16,7 +16,7 @@
       disable_automatic_asset_installation = true; # NixOS manages this
 
       # ── Status Bar ───────────────────────────────────────────
-      default_mode = "locked"; # "locked" = normal mode (keys locked, prefix to unlock)
+      default_mode = "tmux"; # "locked" = normal mode (keys locked, prefix to unlock)
       # alternative: "normal" = keys always active (like tmux)
 
       # ── Session Behaviour ────────────────────────────────────
