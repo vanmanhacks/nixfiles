@@ -35,7 +35,7 @@
     eza
     bat
     ripgrep
-    anew
+    anewer
     btop
     zoxide
     fzf

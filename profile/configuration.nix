@@ -8,7 +8,7 @@
     # ./config/git.nix
     # ./config/hermes.nix
     ./config/mullvad.nix
-    ./config/nvf.nix
+    # ./config/nvf.nix
     ./config/offsec_packages.nix
     ./config/program-settings.nix
     ./config/sddm.nix

@@ -5,9 +5,9 @@
     enable = true;
     plugins = [
       #pkgs.nushellPlugins.net
-      pkgs.nushellPlugins.skim
+      # pkgs.nushellPlugins.skim
       #pkgs.nushellPlugins.units
-      pkgs.nushellPlugins.highlight
+      # pkgs.nushellPlugins.highlight
     ];
   };
 

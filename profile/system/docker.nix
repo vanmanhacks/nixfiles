@@ -20,11 +20,12 @@
       experimental = true;
       dns = [ "9.9.9.9" ];
     };
+    package = pkgs.docker_29;
   };
 
   users.users.${flakeSettings.username}.extraGroups = [ "docker" ];
   environment.systemPackages = with pkgs; [
-    docker
+    docker_29
     docker-compose
     lazydocker
     docker-buildx

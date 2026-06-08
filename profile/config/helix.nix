@@ -15,13 +15,12 @@
       golangci-lint-langserver
       gopls
       gotools
-      helix-gpt
       marksman
       nil
       nixd
       nixpkgs-fmt
-      nodePackages.prettier
-      nodePackages.typescript-language-server
+      prettier
+      typescript-language-server
       sql-formatter
       ruff
       (python3.withPackages (p: (with p; [

@@ -11,7 +11,7 @@
     ./config/git.nix
     ./config/gpg-agent.nix
     ./config/helix.nix
-    ./config/neovide.nix
+    # ./config/neovide.nix
     ./config/nushell.nix
     ./config/plasma.nix
     ./config/rust.nix

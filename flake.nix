@@ -2,10 +2,10 @@
   description = "A simple NixOS flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
@@ -13,10 +13,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    nvf = {
-      url = "github:NotAShelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nvf = {
+    # url = "github:NotAShelf/nvf";
+    # inputs.nixpkgs.follows = "nixpkgs";
+    # };
     #p2pool = {
     #url = "github:jacoMalan1/nixos-p2pool-module";
     #inputs.nixpkgs.follows = "nixpkgs";          
@@ -35,7 +35,7 @@
     # hermes-agent.url = "github:NousResearch/hermes-agent";
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, nvf, plasma-manager, impermanence, lanzaboote, hermes-agent, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, plasma-manager, impermanence, lanzaboote, ... }:
     let
       flakeSettings = {
         username = "vanmanhacks";
@@ -72,10 +72,10 @@
             ];
           })
           ./profile/configuration.nix
-          hermes-agent.nixosModules.default
+          # hermes-agent.nixosModules.default
           lanzaboote.nixosModules.lanzaboote
           impermanence.nixosModules.impermanence
-          nvf.nixosModules.default
+          # nvf.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.backupFileExtension = "hm-backup";
