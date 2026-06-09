@@ -79,6 +79,8 @@
     jwt-hack
     apkleaks
     trufflehog
+
+    sniffnet
   ];
 
 }
