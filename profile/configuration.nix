@@ -10,7 +10,7 @@
     ./config/mullvad.nix
     # ./config/nvf.nix
     ./config/offsec_packages.nix
-    ./config/program-settings.nix
+    # ./config/program-settings.nix
     ./config/sddm.nix
     ./config/starship.nix
     ./config/stevenblack-hosts.nix

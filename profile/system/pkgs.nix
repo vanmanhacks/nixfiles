@@ -50,6 +50,7 @@
     tree
     fastfetch
     flameshot
+    wl-clipboard-rs
 
     yt-dlp
 
@@ -164,10 +165,14 @@
 
     dreamchess
 
+    termius
+    qrencode
+    trayscale
+
     # claude-code
 
     inputs.llm-agents.packages.${pkgs.system}.hermes-agent
-    inputs.llm-agents.packages.${pkgs.system}.agent-browser
+    inputs.llm-agents.packages.${pkgs.system}.hermes-desktop
   ];
 
 }
