@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     clamav
   ];
@@ -12,6 +12,8 @@
       # 4:00 AM
       interval = "*-*-* 04:00:00";
       scanDirectories = [
+        "/"
+        "/nix"
         "/home"
         "/var/lib"
         "/tmp"

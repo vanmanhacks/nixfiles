@@ -26,8 +26,6 @@
     jq
     jq-zsh-plugin
 
-    firewalld
-
     alacritty
 
     zsh
@@ -129,8 +127,6 @@
 
     monero-cli
     monero-gui
-    p2pool
-    xmrig
 
     freeplane
     goofcord

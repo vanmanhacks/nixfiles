@@ -51,7 +51,7 @@
   services.btrfs.autoScrub = {
     enable = true;
     interval = "monthly"; # "weekly" is okay too, but monthly is usually enough for laptops
-    fileSystems = [ "/" ]; # Add "/home" if it's a separate partition
+    fileSystems = [ "/nix" "/persist" ]; # Add "/home" if it's a separate partition
   };
 
   systemd.timers."btrfs-scrub-root".timerConfig = {

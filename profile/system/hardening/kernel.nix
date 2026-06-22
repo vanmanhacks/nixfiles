@@ -27,7 +27,7 @@
     "init_on_free=1"
     # randomizes page allocator freelist, improving security by
     # making page allocations less predictable
-    "page_alloc.shuffel=1"
+    "page_alloc.shuffle=1"
     # enables Kernel Page Table Isolation, which mitigates Meltdown and
     # prevents some KASLR bypasses
     "pti=on"
@@ -37,7 +37,7 @@
     # disables vsyscalls, they've been replaced with vDSO
     "vsyscall=none"
     # disables debugfs, which exposes sensitive info about the kernel
-    #"debugfs=off"
+    "debugfs=off"
     # certain exploits cause an "oops", this makes the kernel panic if an "oops" occurs
     "oops=panic"
     # only alows kernel modules that have been signed with a valid key to be loaded
@@ -100,7 +100,7 @@
     # restrict eBPF to the CAP_BPF capability
     #"kernel.unprivileged_bpf_disabled" = 1;
     # should be enabled along with bpf above
-    # "net.core.bpf_jit_harden" = 2;
+    "net.core.bpf_jit_harden" = 2;
     # restrict loading TTY line disciplines to the CAP_SYS_MODULE
     "dev.tty.ldisk_autoload" = 0;
     # prevent exploit of use-after-free flaws

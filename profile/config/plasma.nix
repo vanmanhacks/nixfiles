@@ -26,7 +26,7 @@
       "flameshot-screenshot" = {
         name = "Take Flamshot Screenshot";
         key = "Meta+Shift+F";
-        command = ("flameshot gui --path /home" + ("/" + flakeSettings.username) + "/Library/Pictures/Screenshots");
+        command = "flameshot gui --path /home/${flakeSettings.username}/Library/Pictures/Screenshots";
       };
       "launch-caido" = {
         name = "Launch Caido";
