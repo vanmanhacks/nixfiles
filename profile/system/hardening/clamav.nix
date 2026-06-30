@@ -1,26 +1,28 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     clamav
+    aide
   ];
+
+  # services.aide = {
+  #   enable = true;
+  #   config = {
+  #     rules = [
+  #       "/persist"
+  #     ];
+  #   };
+  # };
   services.clamav = {
-    # Enable clamd daemon
     daemon.enable = true;
     updater.enable = true;
-    updater.frequency = 12; # Number of database checks per day
-    scanner = {
-      enable = true;
-      # 4:00 AM
-      interval = "*-*-* 04:00:00";
-      scanDirectories = [
-        "/"
-        "/nix"
-        "/home"
-        "/var/lib"
-        "/tmp"
-        "/etc"
-        "/var/tmp"
-      ];
-    };
+    updater.interval = "daily"; # Number of database checks per day
+    # scanner = {
+    # enable = true;
+    # interval = "*-*-* 04:00:00";
+    # scanDirectories = [
+    # "/persist"
+    # ];
+    # };
   };
 }
 

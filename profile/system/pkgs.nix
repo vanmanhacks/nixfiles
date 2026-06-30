@@ -116,6 +116,7 @@
 
     lynis
     clamav
+    clamtk
     aide
     kernel-hardening-checker
     logrotate
@@ -165,10 +166,12 @@
     qrencode
     trayscale
 
+    electron
+
     # claude-code
 
-    inputs.llm-agents.packages.${pkgs.system}.hermes-agent
-    inputs.llm-agents.packages.${pkgs.system}.hermes-desktop
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.hermes-agent
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.hermes-desktop
   ];
 
 }

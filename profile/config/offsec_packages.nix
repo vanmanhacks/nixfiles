@@ -45,6 +45,7 @@
     netexec
 
     nmap
+    nmap-formatter
     smap
     rustscan
     fingerprintx

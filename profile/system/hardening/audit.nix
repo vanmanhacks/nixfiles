@@ -29,6 +29,9 @@ in
       admin_space_left = 25;
       admin_space_left_action = "exec ${prune-audit-logs}/bin/prune-audit-logs";
       disk_full_action = "suspend";
+      rate_limit = 2000;
+      backlog_limit = 8192;
+      max_log_file_action = "rotate";
     };
   };
   security.audit = {

@@ -51,6 +51,7 @@
         ".zsh_history"
         ".gitconfig"
         ".viminfo"
+        ".rustscan.toml"
       ];
     };
   };

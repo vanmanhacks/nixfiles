@@ -42,7 +42,7 @@
 # =============================================================================
 
 ## Audit the audit logs
--w /var/log/audit/ -p wra -k auditlog
+## -w /var/log/audit/ -p wra -k auditlog
 -w /var/audit/ -p wra -k auditlog
 
 ## Auditd configuration
@@ -112,10 +112,10 @@
 -a always,exit -F arch=b64 -S kexec_load -k KEXEC
 
 ## Special files
--a always,exit -F arch=b64 -S mknod -S mknodat -k specialfiles
+## -a always,exit -F arch=b64 -S mknod -S mknodat -k specialfiles
 
 ## Mount operations (attributable only)
--a always,exit -F arch=b64 -S mount -S umount2 -F auid!=-1 -k mount
+## -a always,exit -F arch=b64 -S mount -S umount2 -F auid!=-1 -k mount
 
 ## Swap operations
 -a always,exit -F arch=b64 -S swapon -S swapoff -F auid!=-1 -k swap
