@@ -18,7 +18,7 @@
     ./system/android.nix
     ./system/docker.nix
     ./system/fwupd.nix
-    ./system/hardening/audit.nix
+    # ./system/hardening/audit.nix
     ./system/hardening/hardening.nix
     ./system/hardware-configuration.nix
     ./system/hosts.nix

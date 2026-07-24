@@ -1,3 +1,4 @@
 profile/system/password.nix
 profile/system/hosts.nix
 ffiii-appkey
+usbguard-rules.conf

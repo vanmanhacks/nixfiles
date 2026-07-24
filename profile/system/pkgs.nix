@@ -168,10 +168,12 @@
 
     electron
 
-    # claude-code
+    glow
+
+    pnpm
 
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.hermes-agent
-    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.hermes-desktop
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
   ];
 
 }

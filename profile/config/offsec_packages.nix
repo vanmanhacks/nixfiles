@@ -64,7 +64,7 @@
     waymore
     gowitness
     cewl
-    cewler
+    # cewler
     ffuf
     wfuzz
     kiterunner

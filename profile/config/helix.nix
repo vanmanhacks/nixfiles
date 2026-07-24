@@ -19,7 +19,7 @@
       nil
       nixd
       nixpkgs-fmt
-      prettier
+      # prettier
       typescript-language-server
       sql-formatter
       ruff
@@ -206,10 +206,10 @@
         {
           name = "css";
           language-servers = [ "vscode-css-language-server" "gpt" ];
-          formatter = {
-            command = "prettier";
-            args = [ "--stdin-filepath" "file.css" ];
-          };
+          # formatter = {
+          # command = "prettier";
+          # args = [ "--stdin-filepath" "file.css" ];
+          # };
           auto-format = true;
         }
         {
@@ -223,10 +223,10 @@
         {
           name = "html";
           language-servers = [ "vscode-html-language-server" "gpt" ];
-          formatter = {
-            command = "prettier";
-            args = [ "--stdin-filepath" "file.html" ];
-          };
+          # formatter = {
+          # command = "prettier";
+          # args = [ "--stdin-filepath" "file.html" ];
+          # };
           auto-format = true;
         }
         {
@@ -279,10 +279,10 @@
         {
           name = "markdown";
           language-servers = [ "marksman" "gpt" ];
-          formatter = {
-            command = "prettier";
-            args = [ "--stdin-filepath" "file.md" ];
-          };
+          # formatter = {
+          # command = "prettier";
+          # args = [ "--stdin-filepath" "file.md" ];
+          # };
           auto-format = true;
         }
         {
@@ -312,10 +312,10 @@
         {
           name = "scss";
           language-servers = [ "vscode-css-language-server" "gpt" ];
-          formatter = {
-            command = "prettier";
-            args = [ "--stdin-filepath" "file.scss" ];
-          };
+          # formatter = {
+          # command = "prettier";
+          # args = [ "--stdin-filepath" "file.scss" ];
+          # };
           auto-format = true;
         }
         {
@@ -365,10 +365,10 @@
         {
           name = "yaml";
           language-servers = [ "yaml-language-server" ];
-          formatter = {
-            command = "prettier";
-            args = [ "--stdin-filepath" "file.yaml" ];
-          };
+          # formatter = {
+          # command = "prettier";
+          # args = [ "--stdin-filepath" "file.yaml" ];
+          # };
           auto-format = true;
         }
       ];
