@@ -1,6 +1,10 @@
 { pkgs, flakeSettings, ... }:
 
 {
+  xdg.portal.extraPortals = [
+    pkgs.kdePackages.xdg-desktop-portal-kde
+  ];
+
   programs.plasma = {
     enable = true;
     kwin.virtualDesktops.number = 4;

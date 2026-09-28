@@ -13,6 +13,10 @@
 
     openssl
 
+    lsof
+    xrandr
+    kdePackages.kamoso
+
     broot
     fd
     bottom
