@@ -78,7 +78,7 @@
     sqlmap
     dalfox
     jwt-hack
-    apkleaks
+    # apkleaks
     trufflehog
 
     sniffnet

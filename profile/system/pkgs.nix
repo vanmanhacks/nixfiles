@@ -177,7 +177,10 @@
     pnpm
 
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.hermes-agent
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.hermes-desktop
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
+
+    # inputs.sidra.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
 }

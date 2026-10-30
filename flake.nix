@@ -33,6 +33,7 @@
       # follows = "nixpkgs-unstable";
     };
     # hermes-agent.url = "github:NousResearch/hermes-agent";
+    # sidra.url = "github:wimpysworld/sidra";
   };
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, plasma-manager, impermanence, lanzaboote, ... }:

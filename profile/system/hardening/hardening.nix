@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./clamav.nix
-    ./cronjobs.nix
+    # ./clamav.nix
+    # ./cronjobs.nix
     # ./dnscrypt-proxy.nix
     ./firewall.nix
     ./kernel.nix
